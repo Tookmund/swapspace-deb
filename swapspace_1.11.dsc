@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 9), autotools-dev
 Package-List:
  swapspace deb admin extra arch=any
 Checksums-Sha1:
- 585681dc1ca26e4f8bbd7fd036868449aff276b8 145028 swapspace_1.11.tar.xz
+ 7cc5256ca9f759d2dd18cc6b0316c2a1790e722e 144852 swapspace_1.11.tar.xz
 Checksums-Sha256:
- 8e3038368c129db44fe38dfd2c0269464680755d3c8d4a7a253007d699fe38e4 145028 swapspace_1.11.tar.xz
+ 847f6bf9db95f39b8e454657bb0b77fe8074a119d02d2e36ea52571210a3d9f0 144852 swapspace_1.11.tar.xz
 Files:
- d3b8f709fc0cd9f31f14deed766a9d80 145028 swapspace_1.11.tar.xz
+ b51eaa871ea59cf525b7de1a8510a9d5 144852 swapspace_1.11.tar.xz
