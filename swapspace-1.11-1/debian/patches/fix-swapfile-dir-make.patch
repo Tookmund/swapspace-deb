@@ -1,0 +1,13 @@
+Use debian/dirs instead of nasty automake hack to create swapfile directory
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -1,5 +1,7 @@
+ SUBDIRS = src
+ sysconf_DATA = swapspace.conf
+ 
+-install-data-local:
+-	$(MKDIR_P) $(localstatedir)/lib/swapspace
++#Hack uneccessary in package; using debian/dirs instead
++#install-data-local:
++#	$(MKDIR_P) $(localstatedir)/lib/swapspace
++
