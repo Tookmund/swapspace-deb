@@ -2,7 +2,7 @@ Package: swapspace
 Version: 1.11-1
 Architecture: amd64
 Maintainer: Jacob Adams <tookmund@gmail.com>
-Installed-Size: 123
+Installed-Size: 136
 Depends: libc6 (>= 2.7), systemd-sysv | sysvinit-core
 Conflicts: swapd
 Section: admin

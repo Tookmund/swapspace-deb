@@ -1,3 +1,4 @@
+5d5a34d4e607c0bb215336239a942dab  lib/systemd/system/swapspace.service
 bf95d4e92e3a9c1b2ad3d206f235cd15  usr/sbin/swapspace
 511432cd0f8bb4fd224ca49378e2b780  usr/share/doc/swapspace/NEWS.gz
 cfb2b2b22f668df8bc666c0bad1f2ee0  usr/share/doc/swapspace/README
