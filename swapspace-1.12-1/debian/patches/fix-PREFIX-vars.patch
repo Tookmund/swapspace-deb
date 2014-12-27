@@ -1,0 +1,48 @@
+Description: Fix prefix variables
+ Fix the prefix variables and initscripts to reflect real executable locations
+ .
+ swapspace (1.12-1) unstable; urgency=low
+ .
+   * Use PREFIX variables when necessary
+   * Account for normal install (i.e. /usr/local) in code and initscripts
+   * Clean up Makefile flags
+   * Add full text of GPL-2
+   * Compile hog
+Author: Jacob Adams <tookmund@gmail.com>
+
+---
+
+--- a/src/env.h
++++ b/src/env.h
+@@ -23,8 +23,8 @@
+ #ifndef SWAPSPACE_ENV_H
+ #define SWAPSPACE_ENV_H
+ 
+-#define ETCPREFIX "/usr/local"
+-#define VARPREFIX "/usr/local"
++#define ETCPREFIX ""
++#define VARPREFIX ""
+ 
+ #ifdef _LARGE_FILES
+ # define _LARGEFILE64_SOURCE
+--- a/swapspace.lsbinit
++++ b/swapspace.lsbinit
+@@ -25,7 +25,7 @@
+ . /lib/lsb/init-functions
+ 
+ set -e
+-PREFIX="/usr/local"
++PREFIX="/usr"
+ PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+ DESC="dynamic swap manager"
+ NAME=swapspace
+--- swapspace-1.12.orig/swapspace.service
++++ swapspace-1.12/swapspace.service
+@@ -7,7 +7,7 @@ Requires=swap.target
+ 
+ [Service]
+ Type=simple
+-ExecStart=/usr/local/sbin/swapspace
++ExecStart=/usr/sbin/swapspace
+ Restart=always
+ RestartSec=30

@@ -1,0 +1,6 @@
+swapspace for Debian
+--------------------
+
+LSB init script is currently broken; I am working on this but you will need systemd for now
+
+ -- Jacob Adams <tookmund@gmail.com>  Thu, 27 Nov 2014 21:01:28 -0500

@@ -1,0 +1,54 @@
+Description: Use debian/dirs instead of ugly automake hack
+ replace upstream hack with easier solution of debian/dirs
+ .
+ swapspace (1.12-1) unstable; urgency=low
+ .
+   * Use PREFIX variables when necessary
+   * Account for normal install (i.e. /usr/local) in code and initscripts
+   * Clean up Makefile flags
+   * Add full text of GPL-2
+   * Compile hog
+Author: Jacob Adams <tookmund@gmail.com>
+
+---
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -719,7 +719,7 @@
+ 
+ info-am:
+ 
+-install-data-am: install-data-local
++install-data-am:
+ 
+ install-dvi: install-dvi-recursive
+ 
+@@ -776,18 +776,19 @@
+ 	distcheck distclean distclean-generic distclean-tags \
+ 	distcleancheck distdir distuninstallcheck dvi dvi-am html \
+ 	html-am info info-am install install-am install-data \
+-	install-data-am install-data-local install-dvi install-dvi-am \
+-	install-exec install-exec-am install-html install-html-am \
+-	install-info install-info-am install-man install-pdf \
+-	install-pdf-am install-ps install-ps-am install-strip \
+-	install-sysconfDATA installcheck installcheck-am installdirs \
+-	installdirs-am maintainer-clean maintainer-clean-generic \
+-	mostlyclean mostlyclean-generic pdf pdf-am ps ps-am tags \
+-	tags-am uninstall uninstall-am uninstall-sysconfDATA
++	install-data-am install-dvi install-dvi-am install-exec \
++	install-exec-am install-html install-html-am install-info \
++	install-info-am install-man install-pdf install-pdf-am \
++	install-ps install-ps-am install-strip install-sysconfDATA \
++	installcheck installcheck-am installdirs installdirs-am \
++	maintainer-clean maintainer-clean-generic mostlyclean \
++	mostlyclean-generic pdf pdf-am ps ps-am tags tags-am uninstall \
++	uninstall-am uninstall-sysconfDATA
+ 
+ 
+-install-data-local:
+-	$(MKDIR_P) $(localstatedir)/lib/swapspace
++#Hack uneccessary in package; using debian/dirs instead
++#install-data-local:
++#	$(MKDIR_P) $(localstatedir)/lib/swapspace
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.

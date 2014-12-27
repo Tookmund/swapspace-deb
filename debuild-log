@@ -1,0 +1,102 @@
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+W: swapspace source: configure-generated-file-in-source config.status
+N: 
+N:    Leaving config.cache/status causes autobuilders problems. config.cache
+N:    and config.status are produced by GNU autoconf's configure scripts. If
+N:    they are left in the source package, autobuilders may pick up settings
+N:    for the wrong architecture.
+N:    
+N:    The clean rule in debian/rules should remove this file. This should
+N:    ideally be done by fixing the upstream build system to do it when you
+N:    run the appropriate cleaning command (and don't forget to forward the
+N:    fix to the upstream authors so it doesn't happen in the next release).
+N:    If that is already implemented, then make sure you are indeed cleaning
+N:    it in the clean rule. If all else fails, a simple rm -f should work.
+N:    
+N:    Note that Lintian cannot reliably detect the removal in the clean rule,
+N:    so once you fix this, please ignore or override this warning.
+N:    
+N:    Severity: normal, Certainty: possible
+N:    
+N:    Check: cruft, Type: source
+N: 
+W: swapspace source: configure-generated-file-in-source config.log
+E: swapspace source: source-is-missing src/swapspace
+N: 
+N:    The source of the following file is missing. Lintian checked a few
+N:    possible paths to find the source, and do not find it.
+N:    
+N:    Please repack your package to include the source or add it to
+N:    "debian/missing-sources" directory.
+N:    
+N:    If this is a false-positive, please report a bug against Lintian.
+N:    
+N:    Severity: serious, Certainty: possible
+N:    
+N:    Check: cruft, Type: source
+N: 
+W: swapspace source: dh-make-template-in-source debian/swapspace-1.12.doc-base.EX
+N: 
+N:    This package contains debian/*.ex and/or debian/ex.* files installed by
+N:    dh_make. These are intended to be filled in with the package's details
+N:    and renamed for use by various debhelper commands. If they are not being
+N:    used, they should be removed.
+N:    
+N:    Severity: normal, Certainty: possible
+N:    
+N:    Check: debhelper, Type: source
+N: 
+W: swapspace source: debian-watch-file-missing-version
+N: 
+N:    The debian/watch file in this package doesn't start a version= line. The
+N:    first non-comment line of debian/watch should be a version= declaration.
+N:    This may mean that this is an old version one watch file that should be
+N:    updated to the current version.
+N:    
+N:    Refer to the uscan(1) manual page for details.
+N:    
+N:    Severity: normal, Certainty: certain
+N:    
+N:    Check: watch-file, Type: source
+N: 
+W: swapspace: syntax-error-in-debian-changelog line 8 "badly formatted trailer line"
+N: 
+N:    While parsing the Debian changelog, a syntax error was found. If you
+N:    have old changelog entries that don't follow the current syntax but that
+N:    you want to keep as-is for the historical record, add the line:
+N:    
+N:      Old Changelog:
+N:    
+N:    with no leading whitespace before the legacy entries. This line and
+N:    everything after it will be ignored.
+N:    
+N:    Refer to Debian Policy Manual section 4.4 (Debian changelog:
+N:    debian/changelog) for details.
+N:    
+N:    Severity: normal, Certainty: possible
+N:    
+N:    Check: changelog-file, Type: binary
+N: 
+W: swapspace: syntax-error-in-debian-changelog line 17 "badly formatted trailer line"
+W: swapspace: syntax-error-in-debian-changelog line 50 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 51 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 52 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 53 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 54 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 55 "unrecognised line"
+I: swapspace: init.d-script-missing-lsb-description etc/init.d/swapspace
+N: 
+N:    This /etc/init.d script has an LSB keyword section, but it is missing a
+N:    Description LSB keyword. This field isn't directly used currently, but
+N:    adding it is still a good idea for documentation purposes.
+N:    
+N:    Refer to https://wiki.debian.org/LSBInitScripts for details.
+N:    
+N:    Severity: wishlist, Certainty: certain
+N:    
+N:    Check: init.d, Type: binary
+N: 
+Finished running lintian.

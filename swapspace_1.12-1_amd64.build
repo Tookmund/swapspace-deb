@@ -1,0 +1,350 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc -I -i
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+dpkg-buildpackage: source package swapspace
+dpkg-buildpackage: source version 1.12-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Jacob Adams <tookmund@gmail.com>
+ dpkg-source -I -i --before-build swapspace-1.12-1
+dpkg-buildpackage: host architecture amd64
+parsechangelog/debian: warning: swapspace-1.12-1/debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+ fakeroot debian/rules clean
+dh clean  --with autotools-dev
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+Making distclean in src
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+test -z "hog" || rm -f hog
+test -z "swapspace" || rm -f swapspace
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f config.h stamp-h1
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[1]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+   dh_autotools-dev_restoreconfig
+   dh_clean
+ dpkg-source -I -i -b swapspace-1.12-1
+parsechangelog/debian: warning: swapspace-1.12-1/debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building swapspace using existing ./swapspace_1.12.orig.tar.gz
+parsechangelog/debian: warning: swapspace-1.12-1/debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+dpkg-source: warning: ignoring deletion of file config.status, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ChangeLog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file config.log, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory autom4te.cache
+dpkg-source: warning: ignoring deletion of file autom4te.cache/requests, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/traces.0, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/output.1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/output.0, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/traces.1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/stamp-h1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/main.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/opts.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/swaps.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/config.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/hog.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/state.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/log.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/memory.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/support.o, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/swapspace, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/hog, use --include-removal to override
+dpkg-source: info: building swapspace in swapspace_1.12-1.debian.tar.xz
+dpkg-source: info: building swapspace in swapspace_1.12-1.dsc
+ debian/rules build
+dh build  --with autotools-dev
+   dh_testdir
+   dh_autotools-dev_updateconfig
+   dh_auto_configure
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking for pid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for atexit... yes
+checking for getcwd... yes
+checking for getpagesize... yes
+checking for memset... yes
+checking for setlocale... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for swapon... yes
+checking for swapoff... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/config.h
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build
+make[1]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+Making all in src
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make  all-am
+make[3]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o hog.o hog.c
+gcc --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security  -Wl,-z,relro -o hog hog.o  
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o log.o log.c
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o main.o main.c
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o memory.o memory.c
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o opts.o opts.c
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o state.o state.c
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o support.o support.c
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -c -o swaps.o swaps.c
+gcc --std=gnu99 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security  -Wl,-z,relro -o swapspace log.o main.o memory.o opts.o state.o support.o swaps.o  
+make[3]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[1]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+   dh_auto_test
+make[1]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+Making check in src
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[1]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+ fakeroot debian/rules binary
+dh binary  --with autotools-dev
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   dh_auto_install
+make[1]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+Making install in src
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[3]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+ /bin/mkdir -p '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/debian/swapspace/usr/sbin'
+  /usr/bin/install -c swapspace '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/debian/swapspace/usr/sbin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/src'
+make[2]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[3]: Entering directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+ /bin/mkdir -p '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/debian/swapspace/etc'
+ /usr/bin/install -c -m 644 swapspace.conf '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1/debian/swapspace/etc'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[2]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+make[1]: Leaving directory '/home/jacob/Coding/swapspace-deb/swapspace-1.12-1'
+   dh_installdocs
+   dh_installchangelogs
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+   dh_installman
+   dh_installinit
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `swapspace' in `../swapspace_1.12-1_amd64.deb'.
+ dpkg-genchanges  >../swapspace_1.12-1_amd64.changes
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+parsechangelog/debian: warning:     debian/changelog(l17): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Mon, 17 Nov 2014 09:35:00 +0500
+dpkg-genchanges: including full source code in upload
+ dpkg-source -I -i --after-build swapspace-1.12-1
+parsechangelog/debian: warning: swapspace-1.12-1/debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: swapspace source: configure-generated-file-in-source config.status
+N: 
+N:    Leaving config.cache/status causes autobuilders problems. config.cache
+N:    and config.status are produced by GNU autoconf's configure scripts. If
+N:    they are left in the source package, autobuilders may pick up settings
+N:    for the wrong architecture.
+N:    
+N:    The clean rule in debian/rules should remove this file. This should
+N:    ideally be done by fixing the upstream build system to do it when you
+N:    run the appropriate cleaning command (and don't forget to forward the
+N:    fix to the upstream authors so it doesn't happen in the next release).
+N:    If that is already implemented, then make sure you are indeed cleaning
+N:    it in the clean rule. If all else fails, a simple rm -f should work.
+N:    
+N:    Note that Lintian cannot reliably detect the removal in the clean rule,
+N:    so once you fix this, please ignore or override this warning.
+N:    
+N:    Severity: normal, Certainty: possible
+N:    
+N:    Check: cruft, Type: source
+N: 
+W: swapspace source: configure-generated-file-in-source config.log
+E: swapspace source: source-is-missing src/swapspace
+N: 
+N:    The source of the following file is missing. Lintian checked a few
+N:    possible paths to find the source, and do not find it.
+N:    
+N:    Please repack your package to include the source or add it to
+N:    "debian/missing-sources" directory.
+N:    
+N:    If this is a false-positive, please report a bug against Lintian.
+N:    
+N:    Severity: serious, Certainty: possible
+N:    
+N:    Check: cruft, Type: source
+N: 
+W: swapspace source: dh-make-template-in-source debian/swapspace-1.12.doc-base.EX
+N: 
+N:    This package contains debian/*.ex and/or debian/ex.* files installed by
+N:    dh_make. These are intended to be filled in with the package's details
+N:    and renamed for use by various debhelper commands. If they are not being
+N:    used, they should be removed.
+N:    
+N:    Severity: normal, Certainty: possible
+N:    
+N:    Check: debhelper, Type: source
+N: 
+W: swapspace source: debian-watch-file-missing-version
+N: 
+N:    The debian/watch file in this package doesn't start a version= line. The
+N:    first non-comment line of debian/watch should be a version= declaration.
+N:    This may mean that this is an old version one watch file that should be
+N:    updated to the current version.
+N:    
+N:    Refer to the uscan(1) manual page for details.
+N:    
+N:    Severity: normal, Certainty: certain
+N:    
+N:    Check: watch-file, Type: source
+N: 
+W: swapspace: syntax-error-in-debian-changelog line 8 "badly formatted trailer line"
+N: 
+N:    While parsing the Debian changelog, a syntax error was found. If you
+N:    have old changelog entries that don't follow the current syntax but that
+N:    you want to keep as-is for the historical record, add the line:
+N:    
+N:      Old Changelog:
+N:    
+N:    with no leading whitespace before the legacy entries. This line and
+N:    everything after it will be ignored.
+N:    
+N:    Refer to Debian Policy Manual section 4.4 (Debian changelog:
+N:    debian/changelog) for details.
+N:    
+N:    Severity: normal, Certainty: possible
+N:    
+N:    Check: changelog-file, Type: binary
+N: 
+W: swapspace: syntax-error-in-debian-changelog line 17 "badly formatted trailer line"
+W: swapspace: syntax-error-in-debian-changelog line 50 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 51 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 52 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 53 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 54 "unrecognised line"
+W: swapspace: syntax-error-in-debian-changelog line 55 "unrecognised line"
+I: swapspace: init.d-script-missing-lsb-description etc/init.d/swapspace
+N: 
+N:    This /etc/init.d script has an LSB keyword section, but it is missing a
+N:    Description LSB keyword. This field isn't directly used currently, but
+N:    adding it is still a good idea for documentation purposes.
+N:    
+N:    Refer to https://wiki.debian.org/LSBInitScripts for details.
+N:    
+N:    Severity: wishlist, Certainty: certain
+N:    
+N:    Check: init.d, Type: binary
+N: 
+Finished running lintian.

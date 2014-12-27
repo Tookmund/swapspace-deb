@@ -1,0 +1,22 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc -I -i
+parsechangelog/debian: warning:     debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+dpkg-buildpackage: source package swapspace
+dpkg-buildpackage: source version 1.12
+dpkg-buildpackage: source distribution stable
+dpkg-buildpackage: source changed by Jacob Adams <tookmund@gmail.com>
+ dpkg-source -I -i --before-build swapspace-1.12-1
+dpkg-buildpackage: host architecture amd64
+parsechangelog/debian: warning: swapspace-1.12-1/debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+ fakeroot debian/rules clean
+dh clean  --with autotools-dev
+   dh_testdir
+   dh_auto_clean
+   dh_autotools-dev_restoreconfig
+   dh_clean
+ dpkg-source -I -i -b swapspace-1.12-1
+parsechangelog/debian: warning: swapspace-1.12-1/debian/changelog(l8): badly formatted trailer line
+LINE:  -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+dpkg-source: error: can't build with source format '3.0 (quilt)': non-native package version does not contain a revision
+dpkg-buildpackage: error: dpkg-source -I -i -b swapspace-1.12-1 gave error exit status 255

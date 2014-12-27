@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Sat, 27 December 2014 11:32:00 +0500
+Source: swapspace
+Binary: swapspace
+Architecture: source amd64
+Version: 1.12-1
+Distribution: unstable
+Urgency: low
+Maintainer: Jacob Adams <tookmund@gmail.com>
+Changed-By: Jacob Adams <tookmund@gmail.com>
+Description:
+ swapspace  - dynamic swap space manager
+Changes:
+ swapspace (1.12-1) unstable; urgency=low
+ .
+   * Use PREFIX variables when necessary
+   * Account for normal install (i.e. /usr/local) in code and initscripts
+   * Clean up Makefile flags
+   * Add full text of GPL-2
+   * Compile hog
+Checksums-Sha1:
+ 43ced6ebe92f1f4880233b9cbbb1ab2326ad4482 939 swapspace_1.12-1.dsc
+ 979b4935b18dd81615aa9f6a83a716cf43babf86 1385427 swapspace_1.12.orig.tar.gz
+ b58ff779d67a07f0c954e406446692c93ad32d1a 5940 swapspace_1.12-1.debian.tar.xz
+ 49f013fce561ca0375aa7c1b669539494d5f15fc 25870 swapspace_1.12-1_amd64.deb
+Checksums-Sha256:
+ e9fbe504933978655acc6ee0c5823f2469c68668a0e1dc48e836f6a6bb620a2e 939 swapspace_1.12-1.dsc
+ e91f128603c7bad3dad5dcf04af67a4a74a5c7958d7d31c58bd4ed7b5cfd8180 1385427 swapspace_1.12.orig.tar.gz
+ e2f7129cb7a3d044369e376ed865cf25ec4bc65d46cbefd097391f1084b1d820 5940 swapspace_1.12-1.debian.tar.xz
+ 8308cdffb607e2c809442ffd598bb42f8a76435f680f1e311a8f1591d6d02260 25870 swapspace_1.12-1_amd64.deb
+Files:
+ fbb8fc2dec7c725870c48b1931972214 939 admin extra swapspace_1.12-1.dsc
+ 7cdfdb2a97e7f0c72b7d5d9348b0352c 1385427 admin extra swapspace_1.12.orig.tar.gz
+ a76d6946f5a3f30a28fbceced557f751 5940 admin extra swapspace_1.12-1.debian.tar.xz
+ 59b17c13348664ee434594c6ead1a6e6 25870 admin extra swapspace_1.12-1_amd64.deb
