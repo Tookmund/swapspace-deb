@@ -1,0 +1,19 @@
+Source: swapspace
+Section: admin
+Priority: extra
+Maintainer: Jacob Adams <tookmund@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/Tookmund/swapspace
+Vcs-Git: git://github.com/Tookmund/swapspace
+Vcs-Browser: https://github.com/Tookmund/swapspace
+
+Package: swapspace
+Architecture: any
+Conflicts: swapd
+Depends: ${shlibs:Depends}, ${misc:Depends},systemd-sysv | sysvinit-core
+Description: dynamic swap space manager
+ Small, stable system add-on that continuously and automatically adapts
+ available virtual memory space to your actual memory needs.  Claims disk space
+ for use as swap space when needed; frees it up for use by the filesystem when
+ not needed.
