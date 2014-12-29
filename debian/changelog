@@ -1,12 +1,20 @@
-swapspace (1.11-1) stable; urgency=medium
-  * New maintainer (Closes: #725821)
+swapspace (1.12-1) unstable; urgency=low
+  * Use PREFIX variables when necessary
+  * Account for normal install (i.e. /usr/local) in code and initscripts
+  * Clean up Makefile flags
+  * Add full text of GPL-2
+  * Compile hog
+ 
+ -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
+
+swapspace (1.11) stable; urgency=medium
   * New upstream
   * Autotools build system
-  * Account for tmpfs (Closes: #691128)
+  * Account for tmpfs (Debian #691128)
   * SystemD Service
   * Split up README
-
- -- Jacob Adams <tookmund@gmail.com>  Thu, 27 Nov 2014 10:05:00 +0500
+  
+ -- Jacob Adams <tookmund@gmail.com> Mon, 17 Nov 2014 09:35:00 +0500
  
 swapspace (1.10) stable; urgency=high
 
@@ -39,12 +47,12 @@ swapspace (1.7) stable; urgency=low
 
 swapspace (1.6) stable; urgency=low
 
-  * Attempt to free up all swapfiles on uninstall
-  * Compile fixes: PAGE_SIZE is not a constant anymore
-  * Makefile supports dist and distclean targets
-  * Updated to newer version of Debian standards
-  * Documented algorithm as Finite State Machine graph (using graphviz)
-  * Updated copyright notices
+ * Attempt to free up all swapfiles on uninstall
+ * Compile fixes: PAGE_SIZE is not a constant anymore
+ * Makefile supports dist and distclean targets
+ * Updated to newer version of Debian standards
+ * Documented algorithm as Finite State Machine graph (using graphviz)
+ * Updated copyright notices
 
  -- Jeroen T. Vermeulen <jtv@pqxx.org>  Thu, 15 Jun 2006 16:20:00 +0700
 

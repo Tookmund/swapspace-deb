@@ -1,4 +1,17 @@
-Use debian/dirs instead of nasty automake hack to create swapfile directory
+Description: Use debian/dirs instead of install-data-local
+ Replace ugly upstream hack with debian/dirs
+ .
+ swapspace (1.12-1) unstable; urgency=low
+ .
+   * Use PREFIX variables when necessary
+   * Account for normal install (i.e. /usr/local) in code and initscripts
+   * Clean up Makefile flags
+   * Add full text of GPL-2
+   * Compile hog
+Author: Jacob Adams <tookmund@gmail.com>
+
+---
+
 --- a/Makefile.am
 +++ b/Makefile.am
 @@ -1,5 +1,7 @@

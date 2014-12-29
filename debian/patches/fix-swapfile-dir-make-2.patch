@@ -1,10 +1,19 @@
 Description: Use debian/dirs instead of ugly automake hack
+ replace upstream hack with easier solution of debian/dirs
+ .
+ swapspace (1.12-1) unstable; urgency=low
+ .
+   * Use PREFIX variables when necessary
+   * Account for normal install (i.e. /usr/local) in code and initscripts
+   * Clean up Makefile flags
+   * Add full text of GPL-2
+   * Compile hog
+Author: Jacob Adams <tookmund@gmail.com>
 
-Index: swapspace-1.11-1/Makefile.in
-===================================================================
---- swapspace-1.11-1.orig/Makefile.in
-+++ swapspace-1.11-1/Makefile.in
-@@ -719,7 +719,7 @@ info: info-recursive
+---
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -719,7 +719,7 @@
  
  info-am:
  
@@ -13,7 +22,7 @@ Index: swapspace-1.11-1/Makefile.in
  
  install-dvi: install-dvi-recursive
  
-@@ -776,18 +776,19 @@ uninstall-am: uninstall-sysconfDATA
+@@ -776,18 +776,19 @@
  	distcheck distclean distclean-generic distclean-tags \
  	distcleancheck distdir distuninstallcheck dvi dvi-am html \
  	html-am info info-am install install-am install-data \
