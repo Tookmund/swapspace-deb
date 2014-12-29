@@ -1,0 +1,11 @@
+5d5a34d4e607c0bb215336239a942dab  lib/systemd/system/swapspace.service
+481e7ca56bf3b1b20a87e9766d4cd12f  usr/sbin/swapspace
+511432cd0f8bb4fd224ca49378e2b780  usr/share/doc/swapspace/NEWS.gz
+3cd21207627a52df01bdf2f635f443d9  usr/share/doc/swapspace/README
+d2479965d247e6330ef6e149fc39f005  usr/share/doc/swapspace/README.Debian
+717d07f7a3f72a46dd5f3c0dec89ba12  usr/share/doc/swapspace/changelog.Debian.gz
+e6c67fa63e33a118c8855c5b303fe2ff  usr/share/doc/swapspace/changelog.gz
+d31d7791f8c658c3c58d971fd0f3f58f  usr/share/doc/swapspace/comparison
+66ac7f4dfc5879f51ea12cac894fd150  usr/share/doc/swapspace/copyright
+26c62c9492e1a35fb0f24a74a2886acf  usr/share/doc/swapspace/technicaldetails
+a0ee3c9c80e4d515ddc09e11e75183ac  usr/share/man/man8/swapspace.8.gz
