@@ -1,11 +1,11 @@
-swapspace (1.12-1) unstable; urgency=low
+swapspace (1.12) stable; urgency=medium
   * Use PREFIX variables when necessary
   * Account for normal install (i.e. /usr/local) in code and initscripts
   * Clean up Makefile flags
   * Add full text of GPL-2
   * Compile hog
  
- -- Jacob Adams <tookmund@gmail.com>  Sat, 28 December 2014 08:03:00 +0500 
+ -- Jacob Adams <tookmund@gmail.com> Sat, 27 December 2014 11:32:00 +0500 
 
 swapspace (1.11) stable; urgency=medium
   * New upstream
@@ -14,7 +14,7 @@ swapspace (1.11) stable; urgency=medium
   * SystemD Service
   * Split up README
   
- -- Jacob Adams <tookmund@gmail.com>  Mon, 17 Nov 2014 09:35:00 +0500
+ -- Jacob Adams <tookmund@gmail.com> Mon, 17 Nov 2014 09:35:00 +0500
  
 swapspace (1.10) stable; urgency=high
 
