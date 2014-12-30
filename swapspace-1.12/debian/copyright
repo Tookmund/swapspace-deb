@@ -3,7 +3,7 @@ Upstream-Contact: Jacob Adams <tookmund@gmail.com>
 Source: https://github.com/Tookmund/swapspace
 
 Files: *
-Copyright: 2012 Jeroen T. Vermeulen
+Copyright: 2005,2006 Software Industry Promotion Agency, 2010 Jeroen T. Vermeulen
 License: GPL-2
 
 Files: debian/* swapspace.service Makefile.am src/Makefile.am configure.ac

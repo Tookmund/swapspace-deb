@@ -19,17 +19,17 @@ Changes:
    * Account for tmpfs (Closes: #691128)
    * Redo packaging to use new upstream build system
 Checksums-Sha1:
- b27ed9a320e1882412257b4baf7d94746d577c99 942 swapspace_1.12-1.dsc
+ a61697e640dd7ef64cbed8403835696d58e403ea 942 swapspace_1.12-1.dsc
  20dfa5dbb583d8db19dd4f2252758b23afdfe088 1798042 swapspace_1.12.orig.tar.gz
- 8a1caecbb946e765486ed54364903c46697556fb 10988 swapspace_1.12-1.debian.tar.xz
- 819c9509c7ebf64acc023e2298f32c82035d0d10 28596 swapspace_1.12-1_amd64.deb
+ 8582ff895046a2b94222c4babec048b2f97ba2c0 10560 swapspace_1.12-1.debian.tar.xz
+ f8fe6567979ec64c4245793438e6e32f0e536491 28608 swapspace_1.12-1_amd64.deb
 Checksums-Sha256:
- 26b4377f78fdf97493520dfa9cbd8a17183e1e36f1e9d32f9931e78ebd690064 942 swapspace_1.12-1.dsc
+ e662da74caf166b40b374d1edaab406e5fd82bc32b8943d2d3af53251ae17c56 942 swapspace_1.12-1.dsc
  2b0e7a6b2cd5d3926feb0dcf23e298288f3ea1aae50b2d449b7b9cbe28a88d77 1798042 swapspace_1.12.orig.tar.gz
- 85741a47a2af7df7ccfbcc5323f24fba7cb4b6676ba899f21a9a64bdb3bdc949 10988 swapspace_1.12-1.debian.tar.xz
- 7a5e4e92c26ed00225beae0e1b0d75b3dbb0defc9856dd641ea6273e6baea920 28596 swapspace_1.12-1_amd64.deb
+ 1a2fe774906bcdaa5c30856a4c7b2cc4e6304e21728bd86605df0445dbdd9f1b 10560 swapspace_1.12-1.debian.tar.xz
+ bf83061e2a4f11de18a9c1b2d65a6faa8605200150c04853d8b2900c68595fdc 28608 swapspace_1.12-1_amd64.deb
 Files:
- 225ba10d477b47cee8db572b20f2b078 942 admin extra swapspace_1.12-1.dsc
+ aa2d89a0f883a728739defcd134b2a12 942 admin extra swapspace_1.12-1.dsc
  6567f2388d0b76161c11df722634aa8f 1798042 admin extra swapspace_1.12.orig.tar.gz
- 4edd2217cdf6f81eaae269710ec9e9cf 10988 admin extra swapspace_1.12-1.debian.tar.xz
- 583a5b47291f914cdad24a36efcb6fe9 28596 admin extra swapspace_1.12-1_amd64.deb
+ 866d987c87bbf0150764b1b0e2b89781 10560 admin extra swapspace_1.12-1.debian.tar.xz
+ f487680c9f0b687b7f79882698ca04b9 28608 admin extra swapspace_1.12-1_amd64.deb

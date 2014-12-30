@@ -1,2 +1,2 @@
 version=3
-opts=pgpsigurlmangle=s/$/.gpg/ https://github.com/tookmund/swapspace/releases .*/v?(\d\S*)\.tar\.gz
+opts=pgpsigurlmangle=s/$/.gpg/ https://github.com/tookmund/swapspace/releases .*/swapspace-(\d\S*)\.tar\.gz
