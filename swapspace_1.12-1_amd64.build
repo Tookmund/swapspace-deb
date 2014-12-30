@@ -1,7 +1,7 @@
  dpkg-buildpackage -rfakeroot -D -us -uc -I -i
 dpkg-buildpackage: source package swapspace
 dpkg-buildpackage: source version 1.12-1
-dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source distribution experimental
 dpkg-buildpackage: source changed by Jacob Adams <tookmund@gmail.com>
  dpkg-source -I -i --before-build swapspace-1.12
 dpkg-buildpackage: host architecture amd64
@@ -213,17 +213,4 @@ dpkg-genchanges: including full source code in upload
  dpkg-source -I -i --after-build swapspace-1.12
 dpkg-buildpackage: full upload (original source is included)
 Now running lintian...
-W: swapspace source: debian-watch-file-missing-version
-N: 
-N:    The debian/watch file in this package doesn't start a version= line. The
-N:    first non-comment line of debian/watch should be a version= declaration.
-N:    This may mean that this is an old version one watch file that should be
-N:    updated to the current version.
-N:    
-N:    Refer to the uscan(1) manual page for details.
-N:    
-N:    Severity: normal, Certainty: certain
-N:    
-N:    Check: watch-file, Type: source
-N: 
 Finished running lintian.

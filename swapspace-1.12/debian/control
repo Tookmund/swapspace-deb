@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/Tookmund/swapspace
 Package: swapspace
 Architecture: any
 Conflicts: swapd
-Depends: ${shlibs:Depends}, ${misc:Depends},systemd-sysv | sysvinit-core
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: dynamic swap space manager
  Small, stable system add-on that continuously and automatically adapts
  available virtual memory space to your actual memory needs.  Claims disk space

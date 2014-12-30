@@ -1,14 +1,13 @@
 Description: Use debian/dirs instead of install-data-local
  Replace ugly upstream hack with debian/dirs
  .
- swapspace (1.12-1) unstable; urgency=low
- .
-   * Use PREFIX variables when necessary
-   * Account for normal install (i.e. /usr/local) in code and initscripts
-   * Clean up Makefile flags
-   * Add full text of GPL-2
-   * Compile hog
-Author: Jacob Adams <tookmund@gmail.com>
+ swapspace (1.12-1) experimental; urgency=low
+ .  
+   * New Maintainer (Closes: #725821)
+   * New upstream
+   * Account for tmpfs (Closes: #691128)
+   * Redo packaging to use new upstream build system
+Author: Jacob Adams <tookmund@gmail.com>  
 
 ---
 

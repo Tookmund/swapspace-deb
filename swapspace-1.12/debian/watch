@@ -1,4 +1,2 @@
-version=1.11
-
-opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/swapspace-$1\.tar\.gz/ \
-  https://github.com/Tookmund/swapspace/releases .*/v?(\d\S*)\.tar\.gz
+version=3
+opts=pgpsigurlmangle=s/$/.gpg/ https://github.com/tookmund/swapspace/releases .*/v?(\d\S*)\.tar\.gz

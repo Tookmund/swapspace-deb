@@ -3,7 +3,7 @@ Version: 1.12-1
 Architecture: amd64
 Maintainer: Jacob Adams <tookmund@gmail.com>
 Installed-Size: 137
-Depends: libc6 (>= 2.7), systemd-sysv | sysvinit-core
+Depends: libc6 (>= 2.7)
 Conflicts: swapd
 Section: admin
 Priority: extra

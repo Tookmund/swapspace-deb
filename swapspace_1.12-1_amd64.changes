@@ -1,35 +1,35 @@
 Format: 1.8
-Date: Sun, 28 December 2014 08:03:00 +0500
+Date: Mon, 29 Dec 2014 02:14:00 +0500
 Source: swapspace
 Binary: swapspace
 Architecture: source amd64
 Version: 1.12-1
-Distribution: unstable
+Distribution: experimental
 Urgency: low
 Maintainer: Jacob Adams <tookmund@gmail.com>
 Changed-By: Jacob Adams <tookmund@gmail.com>
 Description:
  swapspace  - dynamic swap space manager
+Closes: 691128 725821
 Changes:
- swapspace (1.12-1) unstable; urgency=low
+ swapspace (1.12-1) experimental; urgency=low
  .
-   * Use PREFIX variables when necessary
-   * Account for normal install (i.e. /usr/local) in code and initscripts
-   * Clean up Makefile flags
-   * Add full text of GPL-2
-   * Compile hog
+   * New Maintainer (Closes: #725821)
+   * New upstream
+   * Account for tmpfs (Closes: #691128)
+   * Redo packaging to use new upstream build system
 Checksums-Sha1:
- 3c243c1da1d121c0976a04bc73285029d94d964f 939 swapspace_1.12-1.dsc
+ b27ed9a320e1882412257b4baf7d94746d577c99 942 swapspace_1.12-1.dsc
  20dfa5dbb583d8db19dd4f2252758b23afdfe088 1798042 swapspace_1.12.orig.tar.gz
- 86f91ddf8e003bcadbf53d374fc06094f7c31b60 6504 swapspace_1.12-1.debian.tar.xz
- 7213281de11d864dfb281e53da70c86cf272c061 28732 swapspace_1.12-1_amd64.deb
+ 8a1caecbb946e765486ed54364903c46697556fb 10988 swapspace_1.12-1.debian.tar.xz
+ 819c9509c7ebf64acc023e2298f32c82035d0d10 28596 swapspace_1.12-1_amd64.deb
 Checksums-Sha256:
- 65e45634a9feac91ab34de66d155b8c582e9e84a8888cba7b283b8214bbb5d5f 939 swapspace_1.12-1.dsc
+ 26b4377f78fdf97493520dfa9cbd8a17183e1e36f1e9d32f9931e78ebd690064 942 swapspace_1.12-1.dsc
  2b0e7a6b2cd5d3926feb0dcf23e298288f3ea1aae50b2d449b7b9cbe28a88d77 1798042 swapspace_1.12.orig.tar.gz
- ced566ec299c26dae9117d09b3159b3aaa7d1d8e9178532f1a2d4d6bc714dc07 6504 swapspace_1.12-1.debian.tar.xz
- 86d02f05a2e15b9fadcbc655fd50d8734ba1c2f2c0c9341dfaf6e6d8ba5818d6 28732 swapspace_1.12-1_amd64.deb
+ 85741a47a2af7df7ccfbcc5323f24fba7cb4b6676ba899f21a9a64bdb3bdc949 10988 swapspace_1.12-1.debian.tar.xz
+ 7a5e4e92c26ed00225beae0e1b0d75b3dbb0defc9856dd641ea6273e6baea920 28596 swapspace_1.12-1_amd64.deb
 Files:
- cdd47b2ec8b54e290e8851b9ceff585c 939 admin extra swapspace_1.12-1.dsc
+ 225ba10d477b47cee8db572b20f2b078 942 admin extra swapspace_1.12-1.dsc
  6567f2388d0b76161c11df722634aa8f 1798042 admin extra swapspace_1.12.orig.tar.gz
- 29e7fccc7eb2744a8524ef3281934ac0 6504 admin extra swapspace_1.12-1.debian.tar.xz
- b20f631ce35a4fe9bb0ef3fa66aeb1c1 28732 admin extra swapspace_1.12-1_amd64.deb
+ 4edd2217cdf6f81eaae269710ec9e9cf 10988 admin extra swapspace_1.12-1.debian.tar.xz
+ 583a5b47291f914cdad24a36efcb6fe9 28596 admin extra swapspace_1.12-1_amd64.deb

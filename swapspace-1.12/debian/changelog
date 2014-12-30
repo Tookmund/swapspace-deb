@@ -1,20 +1,11 @@
-swapspace (1.12-1) unstable; urgency=low
-  * Use PREFIX variables when necessary
-  * Account for normal install (i.e. /usr/local) in code and initscripts
-  * Clean up Makefile flags
-  * Add full text of GPL-2
-  * Compile hog
- 
- -- Jacob Adams <tookmund@gmail.com>  Sun, 28 December 2014 08:03:00 +0500 
-
-swapspace (1.11) stable; urgency=medium
-  * New upstream
-  * Autotools build system
-  * Account for tmpfs (Debian #691128)
-  * SystemD Service
-  * Split up README
+swapspace (1.12-1) experimental; urgency=low
   
- -- Jacob Adams <tookmund@gmail.com>  Mon, 17 Nov 2014 09:35:00 +0500
+  * New Maintainer (Closes: #725821)
+  * New upstream
+  * Account for tmpfs (Closes: #691128)
+  * Redo packaging to use new upstream build system
+  
+ -- Jacob Adams <tookmund@gmail.com>  Mon, 29 Dec 2014 02:14:00 +0500
 
 swapspace (1.10-4) unstable; urgency=low
 
