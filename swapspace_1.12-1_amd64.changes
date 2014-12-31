@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 Format: 1.8
 Date: Mon, 29 Dec 2014 02:14:00 +0500
 Source: swapspace
@@ -19,17 +22,29 @@ Changes:
    * Account for tmpfs (Closes: #691128)
    * Redo packaging to use new upstream build system
 Checksums-Sha1:
- a61697e640dd7ef64cbed8403835696d58e403ea 942 swapspace_1.12-1.dsc
+ ac3aceb0cf3638da92581790cbc69b36e6eb274f 1465 swapspace_1.12-1.dsc
  20dfa5dbb583d8db19dd4f2252758b23afdfe088 1798042 swapspace_1.12.orig.tar.gz
- 8582ff895046a2b94222c4babec048b2f97ba2c0 10560 swapspace_1.12-1.debian.tar.xz
- f8fe6567979ec64c4245793438e6e32f0e536491 28608 swapspace_1.12-1_amd64.deb
+ 0bc7d905fde88f7c74682cc623d425723619b395 10560 swapspace_1.12-1.debian.tar.xz
+ 7dbb761a4045f4f653a9af9f54535b25fd16a9c6 28620 swapspace_1.12-1_amd64.deb
 Checksums-Sha256:
- e662da74caf166b40b374d1edaab406e5fd82bc32b8943d2d3af53251ae17c56 942 swapspace_1.12-1.dsc
+ a59e5caab67cf4a0d59fe3603615947f02451e48d69ace6b26ecd9369c6dfeb0 1465 swapspace_1.12-1.dsc
  2b0e7a6b2cd5d3926feb0dcf23e298288f3ea1aae50b2d449b7b9cbe28a88d77 1798042 swapspace_1.12.orig.tar.gz
- 1a2fe774906bcdaa5c30856a4c7b2cc4e6304e21728bd86605df0445dbdd9f1b 10560 swapspace_1.12-1.debian.tar.xz
- bf83061e2a4f11de18a9c1b2d65a6faa8605200150c04853d8b2900c68595fdc 28608 swapspace_1.12-1_amd64.deb
+ df40a827936cf28ae291a36fe081d6baa565d0196f7a5dd895850a104d607500 10560 swapspace_1.12-1.debian.tar.xz
+ 2e273ce25a51b12f529dde90383de64585d78ed5480d6a40f8ee17b83651b215 28620 swapspace_1.12-1_amd64.deb
 Files:
- aa2d89a0f883a728739defcd134b2a12 942 admin extra swapspace_1.12-1.dsc
+ 6cff0eef918c447751428a4b0f6361ab 1465 admin extra swapspace_1.12-1.dsc
  6567f2388d0b76161c11df722634aa8f 1798042 admin extra swapspace_1.12.orig.tar.gz
- 866d987c87bbf0150764b1b0e2b89781 10560 admin extra swapspace_1.12-1.debian.tar.xz
- f487680c9f0b687b7f79882698ca04b9 28608 admin extra swapspace_1.12-1_amd64.deb
+ 548eb268e6bb4c60dc682e87fd15677a 10560 admin extra swapspace_1.12-1.debian.tar.xz
+ 7b497027f64e1fd86d6bcc304dd40b41 28620 admin extra swapspace_1.12-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBCAAGBQJUpHgYAAoJEA4dxbqyYvBX8KQH/3XrUFnxX5UBmJrZa5tMs2km
+vxt+3tvSzLM6G9dJp5/YHAJqQ997SI6E1oH/HtRQgok6psNQXnPEzzTRAbwB8F5G
+nPzbnOeY0v0Yvrb1TFHfX3Cqg1+fg3L4JTl3+ebw6e46rvkuc3uInHg0aDOjuD86
+BTRfRnB1iKSGK2qtWdXHdazuAs7+qWI/gGlVeRbvnFxiPekTDjqHk6COUoDTMmjR
+ba8qCyQkqS/5NCEbWnGEDFt9AKyJBx4VJaz0nnbDSL28s9sfmcHBJfKTjmNcfGXz
+qX+Vm5J5y9/HjGtOi8ZBEWgnPuEkgzTn3kUOyQCdcNSuExERedcVlBiwu2ysfmk=
+=knIX
+-----END PGP SIGNATURE-----
